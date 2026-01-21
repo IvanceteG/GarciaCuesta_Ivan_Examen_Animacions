@@ -5,10 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen 2 - Multimèdia i integració (CSS + embed + multimèdia)</title>
     <style>
-        
+        .fondoazul{
+            background-color: rgb(0, 183, 255);
+        }
+
+        .contenedorPrincipal{
+            background-color: white;
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 25px;
+            justify-content: center;
+        }
+
+        p{
+            font-size: 18px;
+            color: rgb(102, 102, 102);
+        }
+
+        .titulo{
+            color: rgb(0, 132, 255);
+        }
+
+        .exercicis{
+            color: blueviolet;
+        }
+
+        .colorfondo{
+            background-color: blueviolet;
+        }
+
+        .tarjetas{
+            display: flex;
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .tarjeta1, .tarjeta2, .tarjeta3{
+            width: 250px;
+            border: 1px solid white;
+            margin: 20px;
+            border-radius: 5px;
+            transition: ease-in-out 300ms;
+        }
+
+        .tarjeta1:hover{
+            scale: calc(1.2);
+            background-color: rgb(240, 240, 240);
+        }
+
+        .color1{
+            background-color: blueviolet;
+            width: 250px;
+            height: 125px;
+            border-radius: 5px;
+        }
+
+        .color2{
+            background-color: rgb(255, 168, 182);
+            width: 250px;
+            height: 125px;
+            border-radius: 5px;
+        }
+
+        .color3{
+            background-color: rgb(0, 195, 255);
+            width: 250px;
+            height: 125px;
+            border-radius: 5px;
+        }
+
+        h4{
+            font-size: 28px;
+        }
+
+        .boton1{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            transition: ease-in 200ms;
+        }
+
+        .boton1:hover{
+            background-color: #2980b9;
+        }
+
+        .boton2{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-color: rgb(255, 46, 46);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            transition: ease-in-out 600ms;
+        }
+
+        .boton2:active{
+            rotate: calc(360deg);
+        }
+
+        .boton3{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-color: rgb(48, 247, 58);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            transition: 200ms ease;
+        }
+
+        .boton3:hover{
+            scale: calc(1.2);
+        }
+
+        .boton3:active{
+            scale: calc(1.2);
+        }
+
+        .boton4{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-color: rgb(0, 68, 255);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            transition: ease 300ms;
+        }
+
+        .boton4:hover{
+            scale: calc(1.1);
+            rotate: calc(5deg);
+            background-color: rgb(0, 49, 184);
+        }
+
+        .redonda{
+            background-color: rgb(255, 105, 130);
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin-left: 900px;
+            transition: 1.5s ease-in-out infinite;
+        }
+
+        @keyframes redonda{
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.2);
+            }
+        }
+
+        .menu{
+            display: flex;
+            background-color: rgb(214, 214, 214);
+            list-style: none;
+            padding: 20px;
+            justify-content: center;
+            margin: 30px;
+        }
+
+        .menu2{
+            margin: 10px;
+            font-size: 20px;
+            transition: ease-in-out 200ms;
+        }
+
+        .menu2:hover{
+            color: #0051ff;
+        }
     </style>
 </head>
-<body>
-    <h1>Examen 2 - Multimèdia i integració (CSS + embed + multimèdia)</h1>
+<body class="fondoazul">
+    <div class="contenedorPrincipal">
+        <h1 class="titulo">Examen 2 - Multimèdia i integració (CSS + embed + multimèdia)</h1>
+
+        <p>Transicions, transformacions i Animacions CSS</p>
+
+        <h2 class="exercicis">Exercici 1: Cards amb Transicions</h2>
+        <div class="tarjetas">
+            <div class="tarjeta1">
+                <div class="color1">
+                    <img src="" alt="">
+                </div>
+                <h4><strong>Card 1</strong></h4>
+                <p>Aquesta card te transicions de color, escala i ombra al pasar amb el ratolí. Observa com s'eleva visualment amb una transició suau.</p>
+            </div>
+            <div class="tarjeta2">
+                <div class="color2">
+                    <img src="" alt="">
+                </div>
+                <h4><strong>Card 2</strong></h4>
+                <p>Aquesta card te transicions de color, escala i ombra al pasar amb el ratolí. Observa com s'eleva visualment amb una transició suau.</p>
+            </div>
+            <div class="tarjeta3">
+                <div class="color3">
+                    <img src="" alt="">
+                </div>
+                <h4><strong>Card 3</strong></h4>
+                <p>Aquesta card te transicions de color, escala i ombra al pasar amb el ratolí. Observa com s'eleva visualment amb una transició suau.</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="exercicis">Exercici 2: Botons amb Animacions</h2>
+            <button class="boton1"><strong>Transició de fons</strong></button>
+            <button class="boton2"><strong>Rotació al click</strong></button>
+            <button class="boton3"><strong>Escala</strong></button>
+            <button class="boton4"><strong>Combinació</strong></button>
+        </div>
+        <div>
+            <h2 class="exercicis">Exercici 3: Animació amb @keyframes</h2>
+            <div class="redonda">
+                <img src="" alt="">
+            </div>
+            <p>El cercle fa una animació de pulsació contínua, créixer i reduir-se utilizant @keyframes</p>
+        </div>
+        <div>
+            <h2 class="exercicis">Exercici 4: Menú amb Transicions</h2>
+            <ul class="menu">
+                <li class="menu2">Home</li>
+                <li class="menu2">Sobre</li>
+                <li class="menu2">Serveis</li>
+                <li class="menu2">Contacte</li>
+            </ul>
+            <p>Passa el ratoli sobre cada element del menú la transició de color i l'aparició de la línia sota el text.</p>
+        </div>
+    </div>
 </body>
 </html>
